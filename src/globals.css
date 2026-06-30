@@ -1,0 +1,36 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap");
+
+/* Custom  */
+
+.bg-dot-pattern {
+  background-size: 20px 20px;
+  background-image: radial-gradient(#d4d4d4 1px, transparent 1px);
+}
+
+/* Infinite Tools Marquee Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+.animate-scroll-reverse {
+  animation: scroll-reverse 20s linear infinite;
+}
+.pause:hover {
+  animation-play-state: paused;
+}
